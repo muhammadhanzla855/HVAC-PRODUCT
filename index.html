@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC-MODERN</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header__container">
+
+      <!-- Logo -->
+      <div class="header__logo">
+        <img src="./assets/icons/Modern.png" alt="Logo" />
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav">
+        <a class="header__link" href="./index.html">Home</a>
+        <a class="header__link" href="./aboutus.html">About Us</a>
+
+        <!-- Dropdown -->
+        <div class="header__dropdown">
+          <button class="header__dropdown-trigger">
+            Services
+            <span class="header__dropdown-icon">▾</span>
+          </button>
+
+          <div class="header__dropdown-menu">
+            <a href="./services/service1.html">HVAC Installation</a>
+            <a href="./services/service2.html">Maintenance</a>
+            <a href="./services/service3.html">Air Quality</a>
+            
+          </div>
+        </div>
+
+        <a class="header__link" href="./blogs.html">Blogs</a>
+        <a class="header__link" href="./gallery.html">Work Gallery</a>
+        
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="header__cta">
+        <button class="btn">
+          CONTACT US
+          <span class="btn__icon">
+            <img src="./assets/icons/arrow.svg" alt="Arrow" />
+          </span>
+        </button>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button class="header__mobile-toggle" id="mobileToggle">
+        ☰
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="./index.html">Home</a>
+      <a href="./aboutus.html">About Us</a>
+      <a href="./blogs.html">Blogs</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Work Gallery</a>
+    </div>
+  </header>
+    <section class="hero" id="hero"
+  style="--hero-bg: url('https://thelagirl.com/wp-content/uploads/2023/11/ivan-karpov-7oLuzIZ3QIg-unsplash-2048x1365.jpg');">
+
+  <!-- CONTENT -->
+  <div class="hero__content">
+
+    <!-- Navbar injected here (positioned independently) -->
+    <div id="hero-navbar"></div>
+
+    <div class="hero__inner">
+      <div class="hero__text-block">
+
+        <h1 class="hero__title">
+          Affordable <br />
+          HVAC Solution in 
+          <br />California and Los Angeles.
+        </h1>
+
+        <button class="hero__cta">
+  <span>Get Started Now</span>
+  <span class="hero__cta-icon">
+    <span>→</span>
+  </span>
+</button>
+
+
+        <p class="hero__description">
+          Expert HVAC solutions for homes & businesses — reliable heating,
+          cooling, and air quality services you can trust.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="get-call">
+  <div class="get-call__container">
+
+    <div class="get-call__text">
+      <h2 class="get-call__title">Get a Call Back</h2>
+      <p class="get-call__subtitle">
+        Leave your details and our HVAC experts will contact you shortly.
+      </p>
+    </div>
+
+    <form class="get-call__form" id="getCallForm">
+      <div class="form-field floating-label">
+        <input type="text" id="full-name" required />
+        <label for="full-name">Full Name</label>
+      </div>
+
+      <div class="form-field floating-label">
+        <input type="email" id="email" required />
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="form-field floating-label">
+        <input type="tel" id="phone" required />
+        <label for="phone">Phone Number</label>
+      </div>
+
+      <button type="submit" class="get-call__btn">
+        Get a Call
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<section class="service-highlights">
+  <div class="container">
+
+    <!-- HEADING -->
+    <h2 class="section-title">
+      Discover Expert<br/> HVAC Services Today
+    </h2>
+
+    <!-- CARDS GRID -->
+    <div class="cards-grid">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="https://framerusercontent.com/images/u3ObTLZpHUyV9xVSEFCcpifLD0.png" alt="Residential HVAC Services" />
+        <div class="card-content">
+          <h3>Residential HVAC Services</h3>
+          <p class="discount">20% <span>OFF</span></p>
+          <p class="desc">Complete solutions for comfort, efficiency, and reliability.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="https://framerusercontent.com/images/kFhJwu6kZhaO7D8M62bpo4gELcw.png" alt="Smart HVAC Controls and Automation" />
+        <div class="card-content">
+          <h3>Smart HVAC Controls and Automation</h3>
+          <p class="discount">15% <span>OFF</span></p>
+          <p class="desc">Intelligent thermostats & mobile monitoring for precise control.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="https://framerusercontent.com/images/CJClDHqhBQtkHEjgfjGH6rAAJ7M.png" alt="Maintenance, Repair, and Diagnostics" />
+        <div class="card-content">
+          <h3>Maintenance, Repair, and Diagnostics</h3>
+          <p class="discount">10% <span>OFF</span></p>
+          <p class="desc">Preventive checks & diagnostics to extend system life.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="https://framerusercontent.com/images/6BdJQMuKx9vf30GFASuvH8BXE.png" alt="Indoor Air Quality Solutions" />
+        <div class="card-content">
+          <h3>Indoor Air Quality Solutions</h3>
+          <p class="discount">30% <span>OFF</span></p>
+          <p class="desc">Filtration, purification, UV treatment & humidity control.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <!-- HIDDEN CARDS -->
+      <div class="card hidden">
+        <img src="https://framerusercontent.com/images/u3ObTLZpHUyV9xVSEFCcpifLD0.png" alt="Commercial HVAC Services" />
+        <div class="card-content">
+          <h3>Commercial HVAC Services</h3>
+          <p class="discount">25% <span>OFF</span></p>
+          <p class="desc">Scalable HVAC solutions for buildings of all sizes.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://framerusercontent.com/images/kFhJwu6kZhaO7D8M62bpo4gELcw.png" alt="Building Automation and Control Systems" />
+        <div class="card-content">
+          <h3>Building Automation and Control Systems</h3>
+          <p class="discount">20% <span>OFF</span></p>
+          <p class="desc">Centralized HVAC monitoring & energy management.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://framerusercontent.com/images/CJClDHqhBQtkHEjgfjGH6rAAJ7M.png" alt="Commercial Maintenance and Optimization" />
+        <div class="card-content">
+          <h3>Commercial Maintenance and Optimization</h3>
+          <p class="discount">15% <span>OFF</span></p>
+          <p class="desc">Preventive & corrective maintenance for business HVAC systems.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+      <div class="card hidden">
+        <img src="https://framerusercontent.com/images/6BdJQMuKx9vf30GFASuvH8BXE.png" alt="Energy Efficiency and Compliance" />
+        <div class="card-content">
+          <h3>Energy Efficiency and Compliance</h3>
+          <p class="discount">10% <span>OFF</span></p>
+          <p class="desc">Systems designed to meet SEER2, EPA, ASHRAE standards.</p>
+          <button>BOOK NOW <span>↗</span></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LOAD / HIDE MORE BUTTONS -->
+    <div class="see-more-wrapper">
+      <button id="seeMoreBtn">Load More Services</button>
+      <button id="hideBtn" style="display:none;">Hide Services</button>
+    </div>
+
+  </div>
+</section>
+<section class="why-choose">
+  <div class="why-choose__container">
+
+    <!-- SECTION HEADER -->
+    <div class="why-choose__header">
+      <h2>Why Choose Modern HVAC Services</h2>
+      <p>Reliable, efficient, and professional HVAC solutions for residential and commercial clients.</p>
+    </div>
+
+    <!-- FEATURES GRID -->
+    <div class="why-choose__features">
+
+      <div class="feature-card">
+        <div class="feature-icon">📅</div>
+        <h3>Book Your Service</h3>
+        <p>Scheduling is fast and convenient. We handle installations, repairs, and maintenance with clear communication and dependable service.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⏰</div>
+        <h3>We Arrive On Time</h3>
+        <p>Technicians arrive as scheduled, fully prepared to complete work efficiently, minimizing disruption to your home or business.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📌</div>
+        <h3>Flexible Scheduling</h3>
+        <p>Customizable appointment windows let you choose the most convenient time for service, whether standard hours or special needs.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">✔️</div>
+        <h3>Satisfaction Guaranteed</h3>
+        <p>Every service is performed with care, precision, and professionalism. We stand behind our work to ensure your complete satisfaction.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT: BRAND + DESCRIPTION + SOCIAL -->
+    <div class="footer-brand">
+      <div class="footer-logo">HVAC-MODERN</div>
+      <p class="follow-text">Follow us on social media</p>
+      <div class="social-icons">
+        <div class="icon" title="Facebook">F</div>
+        <div class="icon" title="Twitter">T</div>
+        <div class="icon" title="LinkedIn">L</div>
+        <div class="icon" title="Instagram">I</div>
+      </div>
+    </div>
+
+    <!-- RIGHT: CHAT / CONTACT -->
+    <div class="footer-chat">
+      <p class="chat-text">Need Help? Chat with us</p>
+      <div class="chat-icons">
+        <div class="icon" title="WhatsApp">W</div>
+        <div class="icon" title="Email">@</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-copyright">
+    &copy; 2026 HVAC-MODERN Services. All rights reserved.
+  </div>
+</footer>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
