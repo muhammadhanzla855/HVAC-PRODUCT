@@ -831,7 +831,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #fff;
-  border: 2px solid #e5e7eb; /* neutral border */
+  border: 4px solid transparent; /* neutral border */
   overflow: hidden;
   transition: border 0.3s ease, transform 0.2s ease;
   border-radius: 8px;
