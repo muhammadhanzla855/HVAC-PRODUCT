@@ -65,12 +65,13 @@ body {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: #f97316;
+  background: #FF3B00;
   transition: width 0.3s ease;
 }
 
 .header__link:hover {
-  color: #f97316;
+  color: #FF3B00;
+  font-weight: 700;
 }
 
 .header__link:hover::after {
@@ -100,7 +101,7 @@ body {
 }
 
 .header__dropdown-trigger:hover {
-  color: #f97316;
+  color: #FF3B00;
 }
 
 /* dropdown panel */
@@ -140,7 +141,7 @@ body {
 
 .header__dropdown-menu a:hover {
   background: rgba(249, 115, 22, 0.08);
-  color: #f97316;
+  color: #FF3B00;
 }
 
 .header__dropdown:hover .header__dropdown-menu {
@@ -173,14 +174,14 @@ body {
 }
 
 .btn:hover {
-  background: #f97316;
+  background: #FF3B00;
   color: #ffffff;
 }
 
 .btn__icon {
   width: 28px;
   height: 28px;
-  background: #f97316;
+  background: #FF3B00;
   border-radius: 50%;
 
   display: flex;
@@ -236,7 +237,7 @@ body {
     font-size: 1.75rem;
     background: none;
     border: none;
-    color: #f97316;
+    color: #FF3B00;
     cursor: pointer;
   }
 
@@ -281,7 +282,7 @@ body {
   }
 
   .mobile-menu a:hover {
-    color: #f97316;
+    color: #FF3B00;
   }
 
   /* last item spacing */
@@ -298,7 +299,7 @@ body {
 
   .mobile-menu .mobile-cta a {
     justify-content: center;
-    background: #f97316;
+    background: #FF3B00;
     color: #ffffff;
     border-radius: 999px;
     padding: 0.75rem 1rem;
@@ -306,7 +307,7 @@ body {
   }
 
   .mobile-menu .mobile-cta a:hover {
-    background: #ea580c;
+    background: #FF3B00;
     color: #ffffff;
   }
 }
@@ -389,7 +390,7 @@ body {
 
 /* HOVER: fire accent */
 .hero__cta:hover {
-  background: #f97316; /* natural fire */
+  background: #FF3B00; /* natural fire */
   color: #ffffff;
 }
 
@@ -399,7 +400,7 @@ body {
   height: 32px;
   border-radius: 50%;
 
-  background: #f97316;
+  background: #FF3B00;
   color: #ffffff;
 
   display: flex;
@@ -688,7 +689,7 @@ body {
 
 /* Focus / active state */
 .floating-label input:focus {
-  border-color: #f97316;
+  border-color: #FF3B00;
   box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
 }
 
@@ -697,7 +698,7 @@ body {
   top: -8px;
   left: 12px;
   font-size: 12px;
-  color: #f97316;
+  color: #FF3B00;
   background: #ffffff;
   padding: 0 4px;
 }
@@ -710,7 +711,7 @@ body {
 /* Invalid animation */
 .floating-label input.invalid {
   animation: shake 0.35s;
-  border-color: #ef4444;
+  border-color: #FF3B00;
 }
 
 /* ================= CTA BUTTON ================= */
@@ -859,7 +860,7 @@ body {
 }
 
 .card .discount {
-  color: #f97316;
+  color: #FF3B00;
   font-size: 1.75rem;
   font-weight: 700;
 }
@@ -882,9 +883,9 @@ body {
   margin-top: 1rem;
   padding: 0.75rem 2rem;
   font-weight: 600;
-  border: 2px solid #f97316;
+  border: 2px solid #FF3B00;
   background: #fff;
-  color: #f97316;
+  color: #FF3B00;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -897,14 +898,15 @@ body {
 }
 
 .card button:hover {
-  background: #f97316;
+  background: #FF3B00;
   color: #fff;
 }
 
 /* CARD HOVER EFFECT: FULL ORANGE BORDER */
 .card:hover {
-  border-color: #16c4f9; /* entire card border becomes orange */
-  transform: translateY(-2px); /* subtle lift */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px #009EDB; /* subtle orange hover shadow */
+
 }
 
 /* HIDDEN CARDS */
@@ -921,8 +923,8 @@ body {
 #seeMoreBtn, #hideBtn {
   padding: 1rem 3rem;
   border-radius: 6px;
-  border: 2px solid #f97316;
-  background: #f97316;
+  border: 2px solid #FF3B00;
+  background: #FF3B00;
   color: #fff;
   font-weight: 700;
   font-size: 1.125rem;
@@ -932,7 +934,7 @@ body {
 
 #seeMoreBtn:hover, #hideBtn:hover {
   background: #fff;
-  color: #f97316;
+  color: #FF3B00;
   box-shadow: 0 6px 18px rgba(249,115,22,0.15);
 }
 
@@ -991,7 +993,7 @@ body {
 /* FEATURE CARD */
 .feature-card {
   background: #fff;
-  border: 2px solid #f97316; /* orange accent */
+  border: 2px solid #FF3B00; /* orange accent */
   border-radius: 12px;
   padding: 2rem 1.5rem;
   display: flex;
@@ -1002,7 +1004,7 @@ body {
 }
 
 .feature-card:hover {
-  background-color: #f97316;
+  background-color: #009EDB;
   color: #fff;
 }
 
@@ -1015,7 +1017,7 @@ body {
 .feature-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #f97316;
+  color: #FF3B00;
 }
 
 .feature-card:hover .feature-icon {
@@ -1229,7 +1231,7 @@ body {
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 24px rgba(249,115,22,0.15); /* subtle orange hover shadow */
+  box-shadow: 0 10px 24px #009EDB; /* subtle orange hover shadow */
 }
 
 /* CARD HEADER */
@@ -1261,7 +1263,7 @@ body {
 /* RATING */
 .rating {
   margin-left: auto;
-  color: #f97316;
+  color: #FF3B00;
   font-size: 1rem;
 }
 
