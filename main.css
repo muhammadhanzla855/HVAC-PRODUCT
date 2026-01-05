@@ -903,7 +903,7 @@ body {
 
 /* CARD HOVER EFFECT: FULL ORANGE BORDER */
 .card:hover {
-  border-color: #f97316; /* entire card border becomes orange */
+  border-color: #16c4f9; /* entire card border becomes orange */
   transform: translateY(-2px); /* subtle lift */
 }
 
