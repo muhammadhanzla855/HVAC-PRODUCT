@@ -67,3 +67,28 @@ document.addEventListener("DOMContentLoaded", function() {
     seeMoreBtn.style.display = "inline-block";
   });
 });
+const cards = document.querySelectorAll('#card-stack .tf-card');
+let currentIndex = 0;
+
+function cycleCards() {
+  // Remove previous position classes
+  cards.forEach(card => {
+    card.classList.remove('tf-pos-1', 'tf-pos-2', 'tf-pos-3', 'tf-pos-exit');
+  });
+
+  const total = cards.length;
+
+  // Add position classes
+  cards[currentIndex % total].classList.add('tf-pos-1');
+  cards[(currentIndex + 1) % total].classList.add('tf-pos-2');
+  cards[(currentIndex + 2) % total].classList.add('tf-pos-3');
+
+  // Handle exit animation
+  const exitIndex = (currentIndex - 1 + total) % total;
+  cards[exitIndex].classList.add('tf-pos-exit');
+
+  currentIndex++;
+}
+
+// Cycle every 4 seconds
+setInterval(cycleCards, 4000);
