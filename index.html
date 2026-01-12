@@ -6,7 +6,19 @@
     <title>HVAC-MODERN</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="loading">
+  <!-- LOADING SCREEN -->
+   <canvas id="liquid-cursor"></canvas>
+  <div id="loader">
+    <div class="loader-particles" id="loader-particles"></div>
+    <div class="loader-content">
+      <div class="loader-text">HVAC MODERN</div>
+      <div class="loader-progress-container">
+        <div class="loader-progress-bar" id="loader-progress-bar"></div>
+      </div>
+      <div class="loader-percentage" id="loader-percentage">0%</div>
+    </div>
+  </div>
     <!-- ================= HEADER ================= -->
   <header class="header">
     <div class="header__container">
@@ -538,36 +550,6 @@
     </div>
   </div>
 </section>
-<!-- Section 3: Get a Call Form -->
-<section id="section-3" class="call-form-section">
-    <div class="call-form-container">
-        <h2 class="call-form-title">Request a Call from Us</h2>
-
-        <div class="call-form-card">
-            <form id="call-form">
-                <div class="call-form-grid">
-                    <div class="call-form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="call-form-group">
-                        <label>Phone Number</label>
-                        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-                    </div>
-                    <div class="call-form-group">
-                        <label>Your Message</label>
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                </div>
-
-                <div class="call-form-footer">
-                    <button type="submit" class="call-submit-btn">Request a Call</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
-
 
 <footer class="footer">
   <div class="footer-container">
